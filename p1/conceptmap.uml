@@ -1,0 +1,29 @@
+@startuml
+
+title Conceptual Map
+
+class SmartHomeResearch
+class SmartHomeTechnologies
+class EnablingDevices
+class Sensors
+class Physiological
+class Multimedia
+class SociologicalApproach
+class TechnicalApproach
+class MixedApproach
+class UserCentered
+class MathModeling
+
+SmartHomeResearch <|-- SmartHomeTechnologies
+SmartHomeTechnologies --> EnablingDevices
+EnablingDevices <|-- Sensors
+EnablingDevices <|-- Physiological
+EnablingDevices <|-- Multimedia
+SmartHomeResearch <|-- SociologicalApproach
+SmartHomeResearch <|-- TechnicalApproach
+SociologicalApproach <|-- MixedApproach
+TechnicalApproach <|-- MixedApproach
+SociologicalApproach --> UserCentered
+TechnicalApproach --> MathModeling
+
+@enduml

@@ -1,14 +1,15 @@
 ---
-title: 'Smart Homes and Elderly People'
+title: Smart Homes and The Elderly
 author:
   name: Andrea Jemmett
   email: a.jemmett@student.vu.nl
   institute: Vrije Universiteit, Amsterdam
 date: \today
 documentclass: sig-alternate
-abstract: "Automation technologies are becoming more advanced by the day. Some
-questions arise when thinking or new applications of it to improve people's lifes:
-and bla bla bla."
+abstract: "This literature review examines recent trends and applications in
+the smart home research community, with a focus on health care for the elderly.
+We conduct our examination on enabling technologies, recent projects and
+different research approaches."
 bibliography: bibliography.bib
 csl: acm-sigchi-proceedings.csl
 ---
@@ -34,13 +35,13 @@ hyperlinks forming a network of documents. The Web 2.0 is characterized by
 social networks and blogging platforms: the content is created by users of the
 WWW. The latest paradigm is Web 3.0 where content is *semantic* and
 understandable by machines. On the hardware level instead, Wireless Sensor
-Networks and Near Field Communication and RFID tags enable microcontrollers
-(small computing processors) to communicate to each other forming a network of
-data flows. A definition for IoT would necessarily comprehend the notion of an
-open network of intelligent objects that share information and are able to
-cooperate with each other and interact with the environment
-[@madakam2015internet]. The Semantic Web (Web 3.0) provides IoT nodes with a
-tool to understand each other and speak the same language.
+Networks (WSN) and Near Field Communication (NFC) and RFID tags enable
+microcontrollers (small computing processors) to communicate to each other
+forming a network of data flows. A definition for IoT would necessarily
+comprehend the notion of an open network of intelligent objects that share
+information and are able to cooperate with each other and interact with the
+environment [@madakam2015internet]. The Semantic Web (Web 3.0) provides IoT
+nodes with a tool to understand each other and speak the same language.
 
 In the context of home care, technologies like the IoT can provide the health
 care system with new services to enhance the independence and reduce health
@@ -53,20 +54,197 @@ environment such as common household electronics.
 
 # Smart Homes
 
+In this section we are going to present a taxonomy of enabling technologies of
+smart homes and some practical applications and projects of these technologies.
+In the last subsection we are going to discern the points of view of the
+examined authors (of smart home projects) on the matter of smart homes and care
+for the elderly.
+
+
+## Technologies
+
+Smart homes can deploy a number of different sensors and technologies in order
+to achieve their application goals (for example reliable health monitoring or
+fall detection). A brief taxonomy of smart home technologies and their
+definitions is presented in [@demiris2008technologies]. In the smart homes
+domain exist a number of technologies:
+
+- *Physiological monitoring*: is the practice of collecting and analyzing data
+  pertaining physiological measurements such as vital signs of pulse,
+  respiration , temperature, blood pressure, etc.
+- *Functional monitoring / Emergency detection and response*: is the practice
+  of collecting and analyzing data pertaining functional measurements such as
+  general activity level, motion, gait, meal intake and other activities of
+  daily living. Emergency detection is enabled through the collection of data
+  that indicate abnormal or critical situations, such as falls.
+- *Safety monitoring and assistance*: is the practice of collecting and
+  analyzing data pertaining measurements that detect environmental hazards such
+  as fire or gas leaks. Safety assistance aims at facilitating safety by
+  reducing falls, turning on or off lights when getting out of bed.
+- *Security monitoring and assistance*: is the practice of taking measurements
+  that detect human threats such as intruders. Assistance includes responses to
+  identified threats, signaling alarms or contacting authorities.
+- *Social interaction monitoring and assistance*: is the practice of collecting
+  and analyzing data pertaining social interactions such as phone calls,
+  visitors and participation in activities. Assistance in this case, includes
+  technologies that facilitate social interaction, such as video-based
+  components that support video communication with friends and loved ones,
+  virtual participation in group activities, etc.
+- *Cognitive and sensory assistance*: these technologies include those of
+  automated or self-initiated reminders and other cognitive aids such as
+  medication reminder and management tools, key locators, event reminders, etc.
+  for users with identified memory deficits. They can also include task
+  instruction technologies, such as verbal instructions in using an appliance.
+  Sensory assistance includes technologies that aid users with sensory deficits
+  such as for sight, hearing and touch (for example water temperature).
+
+Each of these technologies can be used together with other technologies to
+compose more complex systems and provide more complex services. Moreover each
+technology has its own concerns and is perceived in a different way based on the
+underlying implementation (for example using some obtrusive sensors instead of a
+less obtrusive one).
+
+To implement these technologies there exist a huge variety of electronic
+devices. A taxonomy of these is given in [@alam2012review]; here we are going to
+briefly review the most commonly used categories:
+
+- *Sensor*: these devices are used to take measurements and perceive the
+  environment. Examples of such devices are: light sensors (measure light
+  intensity), passive infrared sensors (PIR, for motion detection), temperature
+  (room or body temperature), pressure sensors (can identify the presence of a
+  person sitting), switch sensor (can detect door open / closed status), RFID
+  (for object and people identification), current and power usage and water
+  flow sensors.
+- *Physiological*: these devices are used to take body measurements and
+  measurements on the user's vital signs. Examples of such devices are: ECG
+  (for pulse rate), PPG (for pulse rate and blood velocity), spirometer (for
+  respiration rate), galvanic skin sensor (for sweating measurements),
+  colorimeter (for pallor, throat inflammation), weight sensors and pulse meter.
+- *Multimedia*: these devices are used for general monitoring or interfacing
+  with the user. Examples of such devices are: cameras (for monitoring and
+  tracking), microphone (for voice commands), speakers or headsets (to announce
+  alerts and information) and displays (to show visual information).
+
+
+## Projects
+
 A lot of smart home projects have been developed by universities around the
 World. In this section we review the most prominent or most innovative in
 relation to our scope: assistance and monitoring of elderly and disabled people.
 
+In [@portet2013design], the authors, assess the potential of voice assisted
+interfaces to control smart home appliances. The "Sweet Home" project aims at
+developing a new user-friendly home automation technology based on voice
+commands. A group of testers (healthy persons in the 71-88 age group) and 3
+professional carers participated in the user evaluation. The experience aimed at
+testing four aspects of the project: voice command, communication with the
+outside world, system interrupting a person's activity and electronic agenda.
+The study shows that voice commands is the most promising technology and would
+be better accepted than more intrusive ones.
+
+Smart home's technologies such as Wireless Sensor Networks have also enabled
+researchers with the opportunity to gain enough data to forecast elderly
+behavior [@suryadevara2013forecasting]. The authors present a framework
+integrating temporal and spatial contextual information to determine the
+wellness of an elderly. Different sensors were placed in different places such
+as a room heater, toaster, microwave, television bed and chairs giving
+information about a person's interaction with an object and the time of the
+interaction; data gathered by these sensors, were collected by a central node
+responsible of computing a forecast of the person's activity.
+
+One of the most useful application of smart home technologies to elderly care
+giving is fall detection because the harms of such an event can be high. The
+authors of [@yu2012posture] developed a system making use of a laptop and a
+digital camera capable of detecting a person falling in a room and taking action
+by sending an alarm signal to caregivers. This system offers an high detection
+rate (97.08%), low false detection rate (0.8%) and has the advantage of being
+non-obtrusive.
+
+The perceived need and preferences for smart homes of seniors is analyzed in
+[@demiris2008senior]. The aim of the study is to assess elderly perceptions on
+specific smart home technologies such as bed sensors, gait monitor, stove
+sensor, motion sensor and video sensor. The experiment was carried on through
+focus group sessions to assess the perceived advantages and concerns associated
+with specific applications and preferences for recipients of sensor-generated
+information (pertaining for example activity levels, sleep patterns and
+potential emergencies). Most applications were perceived as useful and
+participants would agree to their installation in their own home. Moreover some
+concerns were raised about privacy.
+
+A similar study has been carried in [@steele2009elderly]. Focus groups were
+conducted with elderly who were still living independently to explore their
+perceptions and thoughts on Wireless Sensor Networks technologies. Crucial
+discussion points were designed from concepts identified from various user
+acceptance theories and models. After an introduction to WSNs and an example
+application, participants were asked to discuss their perceptions and concerns
+towards the likelihood of using such technologies for an health care system in
+their home. The authors identify six themes (describing the determinants that
+may affect an elderly person's acceptance of the technology) enclosing sixteen
+concepts in relation of perceptions and concerns of participants in WSN-based
+systems for health care. The study shows that most elderly persons highly value
+their independence, hence any system that can prolong that independence tends to
+be highly accepted. Moreover, contrary to other studies (e.g. in
+[@demiris2008senior]) the authors show that the concern for privacy is not as
+high as to justify refuse of the technology.
+
+<!-- TODO expand description -->
 In the USA, the University of Florida's Mobile and Pervasive Computing
 Laboratory has developed a *programmable pervasive space* called Gator Tech
 Smart House [@helal2005gator]. It provides facilities based on environmental
 sensors for comfort and energy efficiency, mobility monitoring, physiological
 monitoring, fall detection, home safety and security, social distant dining with
 family, a driving simulator and a number of smart appliances and devices such as
-mailbox, display, and smartphone. The Georgia Institute of Technology has built
-"The Aware Home" [@kidd1999aware] to assist research in declining elderly memory
-and behavioural trends.
+mailbox, display and smart phone.
 
+<!-- TODO expand description -->
+The Georgia Institute of Technology has built "The Aware Home" [@kidd1999aware]
+to assist research in declining elderly memory and behavioral trends.
+
+
+## Perspectives
+
+As the reader might have noticed, the approaches taken by the research community
+when developing smart home projects are quite different. We can then infer that
+it is also an *interdisciplinary* field, conveying theories, models and
+practices from different disciplines. Each discipline has inevitably its own
+point of view on the subject and in this section we are going to discuss the
+different approaches exposed by authors of smart home project presented in the
+previous section.
+
+The approach taken by authors of [@portet2013design; @demiris2008senior;
+@steele2009elderly] is especially oriented towards an user-centered approach.
+These papers focus on researching *ergonomics* of smart home technologies,
+exploring their research questions with techniques such as wizard of Oz,
+questionnaires, interviews and focus groups. These projects bring to the
+research community heuristics and theories mostly related to the socio-technical
+aspects of smart homes such as which sensors, designs or implementations are
+more intuitive and less obtrusive for end users.
+
+A different approach is the one taken by [@suryadevara2013forecasting;
+@yu2012posture] and to a certain extent by [@helal2005gator] too. These articles
+bring new models and frameworks to the research community by focusing their
+research questions on more technical topics than the previous approach. These
+authors make extensive use of mathematical modeling and Machine Learning
+techniques, almost never touching ethical or sociological arguments. The Gator
+Tech Smart House project's approach is a mix of the technicalities of the
+forecasting and fall detection papers (because it explores technical
+possibilities offered by a huge range of smart appliances and devices) and the
+sociological aspects that may emerge from living in such *programmable pervasive
+space*.
+
+
+# Conclusion
+
+<!-- TODO improve conclusive discussion -->
+A conceptual map has been produced to summarize main aspects and topics touched
+by this literature review and is visible in Figure \ref{fig:conceptmap}. The
+different approaches taken by the research community when it comes to smart
+homes and health care for the elderly have been discerned and put into an UML
+class diagram enclosing the highest possible view on the subject with a few key
+concepts.
+
+<!-- TODO expand class diagram -->
+![Conceptual map of smart home research.\label{fig:conceptmap}](conceptmap.png)
 
 
 # References
