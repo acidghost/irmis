@@ -1,0 +1,72 @@
+---
+title: 'Smart Homes and Elderly People'
+author:
+  name: Andrea Jemmett
+  email: a.jemmett@student.vu.nl
+  institute: Vrije Universiteit, Amsterdam
+date: \today
+documentclass: sig-alternate
+abstract: "Automation technologies are becoming more advanced by the day. Some
+questions arise when thinking or new applications of it to improve people's lifes:
+and bla bla bla."
+bibliography: bibliography.bib
+csl: acm-sigchi-proceedings.csl
+---
+
+# Introduction
+
+Studies show [@lutz2008coming; @countries2003world] that the worldwide life
+expectancy is expected to increase in the 21st century. This increase will lead
+to an estimated increase in population in the 65 and over age group of 24% to
+32%. At the same time the UN predicts a decline in the number of children and
+fertility; summing effects together results in the number of elderly people
+surpassing that of children and this will be more prominent in European
+countries. The health care system will thus face a lack of support from young
+individuals working in home and health care.
+
+At the same time, new technologies like the Internet of Things (IoT), enable
+remote monitoring and sensing at a low cost of implementation and maintenance
+[@whitmore2015internet; @madakam2015internet; @da2014internet;
+@deshpande2016application]. The IoT emerges as a natural evolution of the World
+Wide Web (WWW) adjoint with the increasing miniaturization of computing devices.
+What has been called Web 1.0 was a collection of HTML pages interconnected by
+hyperlinks forming a network of documents. The Web 2.0 is characterized by
+social networks and blogging platforms: the content is created by users of the
+WWW. The latest paradigm is Web 3.0 where content is *semantic* and
+understandable by machines. On the hardware level instead, Wireless Sensor
+Networks and Near Field Communication and RFID tags enable microcontrollers
+(small computing processors) to communicate to each other forming a network of
+data flows. A definition for IoT would necessarily comprehend the notion of an
+open network of intelligent objects that share information and are able to
+cooperate with each other and interact with the environment
+[@madakam2015internet]. The Semantic Web (Web 3.0) provides IoT nodes with a
+tool to understand each other and speak the same language.
+
+In the context of home care, technologies like the IoT can provide the health
+care system with new services to enhance the independence and reduce health
+problems of elderly and disabled people. In this literature review, the term
+*smart home* refers to systems and facilities designed at the improvement or
+monitoring of health condition of elderly or disabled people; it does not
+include systems and facilities that aim at automate and optimize control of home
+environment such as common household electronics.
+
+
+# Smart Homes
+
+A lot of smart home projects have been developed by universities around the
+World. In this section we review the most prominent or most innovative in
+relation to our scope: assistance and monitoring of elderly and disabled people.
+
+In the USA, the University of Florida's Mobile and Pervasive Computing
+Laboratory has developed a *programmable pervasive space* called Gator Tech
+Smart House [@helal2005gator]. It provides facilities based on environmental
+sensors for comfort and energy efficiency, mobility monitoring, physiological
+monitoring, fall detection, home safety and security, social distant dining with
+family, a driving simulator and a number of smart appliances and devices such as
+mailbox, display, and smartphone. The Georgia Institute of Technology has built
+"The Aware Home" [@kidd1999aware] to assist research in declining elderly memory
+and behavioural trends.
+
+
+
+# References
