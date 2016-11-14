@@ -224,6 +224,14 @@ $abstract$
 \end{abstract}
 $endif$
 
+$if(keywords)$
+\keywords{$keywords$}
+$endif$
+
+$for(categories)$
+\category{$categories.cat$}{$categories.nameone$}{$categories.nametwo$} $sep$
+$endfor$
+
 $for(include-before)$
 $include-before$
 
