@@ -9,7 +9,22 @@ documentclass: sig-alternate
 abstract: "This literature review examines recent trends and applications in
 the smart home research community, with a focus on health care for the elderly.
 We conduct our examination on enabling technologies, recent projects and
-different research approaches."
+different research approaches, highlighting differences among them. A
+conceptual framework is introduced to synthesize key words and concepts of
+smart home research and technologies using a Unified Modeling Language. We
+conclude that the research field under exam is multidisciplinary, conveying
+together researchers from both technological and sociological domains."
+keywords: Smart Homes, Elderly Healthcare, IoT
+categories:
+  - cat: A.1.5
+    nameone: Document types
+    nametwo: General literature
+  - cat: H.1.3
+    nameone: Human computer interaction (HCI)
+    nametwo: Interaction devices
+  - cat: S.3.8.2
+    nameone: User characteristics
+    nametwo: Seniors
 bibliography: bibliography.bib
 csl: acm-sigchi-proceedings.csl
 ---
@@ -50,6 +65,11 @@ problems of elderly and disabled people. In this literature review, the term
 monitoring of health condition of elderly or disabled people; it does not
 include systems and facilities that aim at automate and optimize control of home
 environment such as common household electronics.
+
+<!-- TODO -->
+The \nameref{smart-homes} section will present the selected literature, divided
+in categories (technologies, projects and perspectives) and the last section is
+dedicated to a concluding bla bla bla.
 
 
 # Smart Homes
@@ -233,18 +253,43 @@ sociological aspects that may emerge from living in such *programmable pervasive
 space*.
 
 
+# Conceptualization
+
+![Conceptual map of smart home research.\label{fig:smarthome}](smarthome.png)
+
+![Conceptual map of smart home technologies.
+\label{fig:smarttech}](smarttech.png)
+
+Two conceptual maps have been produced to summarize the main aspects and topics
+touched by this literature review and are visible in Figures \ref{fig:smarthome}
+and \ref{fig:smarttech}. The different approaches taken by the research
+community when it comes to smart homes and health care for the elderly have been
+discerned and put into an UML class diagram enclosing the highest possible view
+on the subject with a few key concepts. In Figure \ref{fig:smarthome} we show
+that the research community can be divided in two sub-communities: a community
+following a more technical approach and a community following a more
+sociological one. Often though, this line is blurred and some projects include
+both technical innovations and discussions or experiments related to the
+sociological consequences of an application.
+
+In Figure \ref{fig:smarttech} instead, we show a schematic taxonomy (making use
+of UML again) of the smart home technologies identified during this literature
+review. Most technologies can be broken into two categories: monitoring and
+acting technologies. The former are used to monitor the environment and its
+inhabitants; those can be further divided into passive and active monitoring
+technologies. Acting technologies instead are usually used to respond to an
+event (sensed through monitoring) and act accordingly.
+
+
 # Conclusion
 
-<!-- TODO improve conclusive discussion -->
-A conceptual map has been produced to summarize main aspects and topics touched
-by this literature review and is visible in Figure \ref{fig:conceptmap}. The
-different approaches taken by the research community when it comes to smart
-homes and health care for the elderly have been discerned and put into an UML
-class diagram enclosing the highest possible view on the subject with a few key
-concepts.
-
-<!-- TODO expand class diagram -->
-![Conceptual map of smart home research.\label{fig:conceptmap}](conceptmap.png)
+In this literature review we briefly presented current research in the Smart
+Home community. We started by introducing some terminology and some general
+trends in ICT. Then we proceeded with a taxonomy of Smart Home technologies and
+hardware and we presented some Smart Home projects to the reader, later
+analyzing the different perspectives that researchers in the field have. In
+Section \ref{conceptualization} we provided a conceptual framework that
+summarizes the findings of this literature study.
 
 
 # References

@@ -1,6 +1,6 @@
 @startuml
 
-title Conceptual Map
+title Smart Homes Research
 
 class SmartHomeResearch
 class SmartHomeTechnologies

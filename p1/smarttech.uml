@@ -1,0 +1,33 @@
+@startuml
+
+title Smart Homes Technologies
+
+class SmartHomeTechnologies
+
+class Monitoring
+class PassiveMonitoring
+class ActiveMonitoring
+class Acting
+
+class PhysiologicalMonitoring
+class FunctionalMonitoring
+class EmergencyDetectResponse
+class SafetyMonitoring
+class SecurityMonitoring
+class SocialMonitoring
+class CognitiveAssistance
+
+SmartHomeTechnologies <|-- Monitoring
+SmartHomeTechnologies <|-- Acting
+Monitoring <|-- PassiveMonitoring
+Monitoring <|-- ActiveMonitoring
+PassiveMonitoring <|-- PhysiologicalMonitoring
+PassiveMonitoring <|-- FunctionalMonitoring
+ActiveMonitoring <|-- FunctionalMonitoring
+Acting <|-- EmergencyDetectResponse
+PassiveMonitoring <|-- SafetyMonitoring
+PassiveMonitoring <|-- SecurityMonitoring
+PassiveMonitoring <|-- SocialMonitoring
+Acting <|-- CognitiveAssistance
+
+@enduml
