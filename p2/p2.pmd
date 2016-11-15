@@ -14,30 +14,95 @@ assignment of the course Interdisciplinary Research Methodology for Information
 Sciences (IS). This interview aims at investigating the perceived sense of
 acceptance of a particular senior to Smart Home technologies.
 
+The interviewee is the grandfather of the author, Lorenzo Di Nicola, age 92. He
+lives at his own home with his wife Armida. The interview was conducted in
+Italian.
+
 
 # Interview Structure
 
 We decided to open the interview with an introduction to the subject of elderly
 home care and smart homes some easy questions. Later we started asking questions
-that required more thinking by the interviewer, followed by another series of
-easy questions to ease of any possible tension. Following is the list of
-questions that compose the interview:
+that required more thinking on behalf of the interviewee, followed by another
+series of easy questions to ease of any possible tension or stress. Following is
+the list of questions that compose the interview:
 
 #. Have you ever heard of Smart Homes?
 #. How did you heard of it?
 #. Do you know anyone who uses Smart Home technologies?
 #. Do you know anyone of your age who's had injuries due to a fall?
 #. What do you do to prevent that from happening to you?
-<!-- TODO
-wearable vs video fall detection, general questions, invasiveness, privacy -->
+#. Consider a wearable device that can detect a fall and alert someone. Evaluate
+  it on a scale from 1 to 5 where 1 means "not at all useful" and 5 means "very
+  useful".
+#. Can you argument on that?
+#. Evaluate the wearable device on a scale from 1 to 5 where 1 means "not at all
+  intrusive" and 5 means "very intrusive".
+#. Can you argument on that?
+#. Consider a video monitoring device that can detect a fall and alert someone.
+  Evaluate it on a scale from 1 to 5 where 1 means "not at all useful" and 5
+  means "very useful".
+#. Can you argument on that?
+#. Evaluate the video monitoring device on a scale from 1 to 5 where 1 means
+  "not at all intrusive" and 5 means "very intrusive".
+#. Can you argument on that?
+#. Consider the feature in both devices that allows someone to be alerted of a
+  fall event. Evaluate it on a scale from 1 to 5 where 1 means "not at all
+  useful" and 5 means "very useful".
+#. Why do you think that?
+#. To whom would you like the alert to be sent?
+#. Do you have any additional remark?
+#. Which color would you like a wearable device?
+
+We then thanked the interviewee and declared the end of the interview. We want
+to highlight that before introducing the wearable device and the video
+monitoring device respectively, we made an introduction of the device to the
+interviewee, trying to use simple vocabulary and with the help of some pictures
+from the Internet.
 
 
 # Analysis
-<!-- TODO -->
+
+This Section presents the coding protocol (in Section \ref{coding-protocol})
+used to analyze the interview and the actual interview analysis of the conducted
+interview (in Section \ref{interview-analysis}).
 
 
 ## Coding Protocol
-<!-- TODO -->
+
+To analyze the data gathered during the interview, we make use of a coding
+protocol that defines a number of codes that will be used during the analysis to
+assign a salient concept (represented by a word or a short sentence, a *code*)
+to a portion of the interview or answer given by the interviewee. The codes used
+have been selected from the concepts learned during the literature review and
+some of the acceptance studies examined. They are summarized in the following
+table:
+
+| **Code**            | **Meaning**                                           |
+| :-----------------  | :---------------------------------------------------- |
+|                     |                                                       |
+| *Invasive*          | Signals that the technology the interviewee is        |
+|                     | talking about is perceived as invasive. It may depend |
+|                     | on design aspect of a technology or the methodology   |
+|                     | used.                                                 |
+|                     |                                                       |
+| *Uncomfortable*     | Signals that the interviewee feels uncomfortable      |
+|                     | about the technology. This might be because of the    |
+|                     | way the technology operates or the way it is          |
+|                     | perceived.                                            |
+|                     |                                                       |
+| *Afraid/worried*    | Signals that the technology perceives the technology  |
+|                     | as worrying (for different reasons). What we mean     |
+|                     | in this context is worries deriving from the use of   |
+|                     | the technology (in the practical sense to "make it    |
+|                     | work") and privacy concerns.                          |
+
+These codes are used to highlight portions of the interview with and agreed-upon
+concept label. These terms have been selected so to restrict the scope of the
+analysis of phrases and passages to the relevant topic. We recall that the aim
+of the interview is to discern personal feelings and perceived opinions of the
+interviewee when comparing two different Smart Home solutions for fall
+detection: a wearable device and a video monitoring system.
 
 
 ## Interview Analysis
