@@ -66,10 +66,10 @@ monitoring of health condition of elderly or disabled people; it does not
 include systems and facilities that aim at automate and optimize control of home
 environment such as common household electronics.
 
-<!-- TODO -->
-The \nameref{smart-homes} section will present the selected literature, divided
-in categories (technologies, projects and perspectives) and the last section is
-dedicated to a concluding bla bla bla.
+Section \ref{smart-homes} will present the selected literature, divided in
+categories (technologies, projects and perspectives). Section
+\ref{conceptualization} instead will present a conceptual framework for smart
+homes research. Finally, we draw some conclusions in Section \ref{conclusion}.
 
 
 # Smart Homes
