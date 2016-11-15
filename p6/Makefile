@@ -1,4 +1,5 @@
-PDFs := sh1.pdf
+PDFs := sh1.pdf \
+	sh2.pdf
 
 all: $(PDFs)
 
@@ -6,4 +7,4 @@ all: $(PDFs)
 	@pdflatex $<
 
 clean:
-	@rm -rf $(PDFs) *.{log,aux}
+	@rm -rf $(PDFs) *.log *.aux
