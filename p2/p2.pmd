@@ -5,6 +5,7 @@ author:
   email: a.jemmett@student.vu.nl
   institute: Vrije Universiteit, Amsterdam
 date: \today
+keywords: Smart Homes, Elderly Healthcare, Technology Adoption
 documentclass: sig-alternate
 ---
 
@@ -27,6 +28,7 @@ home care and smart homes some easy questions. Later we started asking questions
 that required more thinking on behalf of the interviewee, followed by another
 series of easy questions to ease of any possible tension or stress. Following is
 the list of questions that compose the interview:
+\newline
 
 #. Have you ever heard of Smart Homes?
 #. How did you heard of it?
@@ -54,6 +56,7 @@ the list of questions that compose the interview:
 #. To whom would you like the alert to be sent?
 #. Do you have any additional remark?
 #. Which color would you like a wearable device?
+\newline
 
 We then thanked the interviewee and declared the end of the interview. We want
 to highlight that before introducing the wearable device and the video
@@ -115,5 +118,109 @@ detection: a wearable device and a video monitoring system.
 <!-- TODO -->
 
 
-# Appendix {.unnumbered}
-<!-- TODO -->
+\appendix
+
+# Transcript
+
+\onecolumn
+
+--------------------------------------------------------------------------------
+**Data**                                                      **Code**
+------------------------------------------------------------- ------------------
+**Q1:** *Hai mai sentito parlare di Smart Homes o domotica?*
+
+**A1:** Sì, ne ho sentito parlare. Ma non so molto... Non ho
+idea di cosa facciano.
+
+**Q2:** *Come ne sei venuto a conoscenza?*
+
+**A2:** Ne hanno parlato in televisione. Ho visto un
+programma di approfondimento in cui si discuteva delle case
+del futuro e come potranno essere.
+
+**Q3:** *Conosci qualcuno che usa tecnologie di automazione o
+domotica, di questo tipo, nella sua abitazione?*
+
+**A3:** Putroppo no.
+
+**Q4:** *Conosci qualcuno della tua età che ha avuto un
+incidente nella sua abitazione dovuto ad una caduta?*
+
+**A4:** Putroppo sì. Un mio amico qualche anno fa, cadde in
+casa sua e si ruppe un femore. Purtroppo come ben sai, alla
+nostra età, una caduta ed, ancor di più, la rottura di un
+osso, può comportare conseguenze molto gravi perché il
+recupero è molto faticoso e lungo. E la degenza è
+deleteria alla nostra età.
+
+**Q5:** *Cosa fai per prevenire che possa succedere a te?*
+
+**A5:**
+
+**Q6:** *Considera un dispositivo indossabile che può rilevare
+una caduta ed alertare qualcuno. Valuta questo dispositivo
+su una scala da 1 a 5 dove con 1 intendi "per nulla utile" e
+con 5 intendi "molto utile".*
+
+**A6:**
+
+**Q7:** *Potresti argomentare la tua risposta?*
+
+**A7:**
+
+**Q8:** *Valuta questo dispositivo indossabile su una scala
+da 1 a 5 dove con 1 intendi "per nulla intrusivo" e con 5
+intendi "molto intrusivo".*
+
+**A8:**
+
+**Q9:** *Potresti argomentare la tua risposta?*
+
+**A9:**
+
+**Q10:** Considera un dispositivo video che può rilevare
+una caduta ed alertare qualcuno. Valuta questo dispositivo
+su una scala da 1 a 5 dove con 1 intendi "per nulla utile" e
+con 5 intendi "molto utile".
+
+**A10:**
+
+**Q11:** *Potresti argomentare la tua risposta?*
+
+**A11:**
+
+**Q12:** *Valuta questo dispositivo video su una scala
+da 1 a 5 dove con 1 intendi "per nulla intrusivo" e con 5
+intendi "molto intrusivo".*
+
+**A12:**
+
+**Q13:** *Potresti argomentare la tua risposta?*
+
+**A13:**
+
+**Q14:** *Considera la possibilità di entrambi i dispositivi
+di potrer alertare qualcuno nel caso in cui una caduta si
+verifichi. Valuta questa caratteristica su una scala da 1 a
+5 dove 1 significa "per nulla utile" e 5 significa
+"molto utile".*
+
+**A14:**
+
+**Q15:** *Perché pensi questo?*
+
+**A15:**
+
+**Q16:** *A chi vorresti che l'avviso sia inviato?*
+
+**A16:**
+
+**Q17:** *Hai qualcos'altro da aggiungere?*
+
+**A18:**
+
+**Q19:** *In che colore preferiresti un dispositivo
+indossabile?*
+
+**A19:**
+------------------------------------------------------------- ------------------
