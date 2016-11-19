@@ -1,10 +1,11 @@
 ---
 title: "Smart Homes: Interview with a Senior"
-author: Andrea Jemmett
-email: a.jemmett@student.vu.nl
-institution: Vrije Universiteit, Amsterdam
+author:
+  name: Andrea Jemmett
+  email: a.jemmett@student.vu.nl
+  institute: Vrije Universiteit, Amsterdam
 date: \today
-documentclass: article
+documentclass: sig-alternate
 ---
 
 # Introduction
@@ -78,24 +79,25 @@ have been selected from the concepts learned during the literature review and
 some of the acceptance studies examined. They are summarized in the following
 table:
 
-| **Code**            | **Meaning**                                           |
-| :-----------------  | :---------------------------------------------------- |
-|                     |                                                       |
-| *Invasive*          | Signals that the technology the interviewee is        |
-|                     | talking about is perceived as invasive. It may depend |
-|                     | on design aspect of a technology or the methodology   |
-|                     | used.                                                 |
-|                     |                                                       |
-| *Uncomfortable*     | Signals that the interviewee feels uncomfortable      |
-|                     | about the technology. This might be because of the    |
-|                     | way the technology operates or the way it is          |
-|                     | perceived.                                            |
-|                     |                                                       |
-| *Afraid/worried*    | Signals that the technology perceives the technology  |
-|                     | as worrying (for different reasons). What we mean     |
-|                     | in this context is worries deriving from the use of   |
-|                     | the technology (in the practical sense to "make it    |
-|                     | work") and privacy concerns.                          |
+--------------------------------------------------------------------------------
+**Code**              **Meaning**
+--------------------- ----------------------------------------------------------
+*Invasive*            Signals that the technology the interviewee is
+                      talking about is perceived as invasive. It may depend
+                      on design aspect of a technology or the methodology
+                      used.
+
+*Uncomfortable*       Signals that the interviewee feels uncomfortable
+                      about the technology. This might be because of the
+                      way the technology operates or the way it is
+                      perceived.
+
+*Afraid/worried*      Signals that the technology perceives the technology
+                      as worrying (for different reasons). What we mean
+                      in this context is worries deriving from the use of
+                      the technology (in the practical sense to "make it
+                      work") and privacy concerns.
+--------------------- ----------------------------------------------------------
 
 These codes are used to highlight portions of the interview with and agreed-upon
 concept label. These terms have been selected so to restrict the scope of the
