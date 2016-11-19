@@ -1,4 +1,5 @@
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$paper,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
+
 $if(beamerarticle)$
 \usepackage{beamerarticle} % needs to be loaded first
 $endif$
@@ -123,6 +124,15 @@ $if(verbatim-in-note)$
 $endif$
 $if(tables)$
 \usepackage{longtable,booktabs}
+\makeatletter
+\let\saved@longtable\longtable
+\long\def\foo#1\LT@err#2#3#4!!{\def\longtable{#1#4}}
+\expandafter\foo\longtable!!
+
+\long\def\foo#1\@outputpage#2\@outputpage#3!!{%
+\def\LT@output{#1\@opcol#2\@opcol#3}}
+\expandafter\foo\LT@output!!
+\makeatother
 % Fix footnotes in tables (requires footnote package)
 \IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{long table}}{}
 $endif$

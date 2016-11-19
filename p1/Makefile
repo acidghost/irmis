@@ -5,7 +5,7 @@ EXTS := %.pdf \
 all: $(FILES)
 
 $(EXTS): %.pmd
-	@pandoc -S -s $< -o $@ --number-sections --template acm-sig-template.latex \
+	@pandoc -S -s $< -o $@ --number-sections --template ../acm-sig-template.latex \
     --filter pandoc-citeproc
 
 clean:
