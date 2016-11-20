@@ -78,34 +78,40 @@ To analyze the data gathered during the interview, we make use of a coding
 protocol that defines a number of codes that will be used during the analysis to
 assign a salient concept (represented by a word or a short sentence, a *code*)
 to a portion of the interview or answer given by the interviewee. The codes used
-have been selected from the concepts learned during the literature review and
-some of the acceptance studies examined. They are summarized in the following
-table:
+are summarized in the following list that exposes a hierarchy of codes, divided
+in categories:
+\newline
 
---------------------------------------------------------------------------------
-**Code**              **Meaning**
---------------------- ----------------------------------------------------------
-*Invasive*            Signals that the technology the interviewee is
-                      talking about is perceived as invasive. It may depend
-                      on design aspect of a technology or the methodology
-                      used.
++ **Prior knowledge, experiences and customs**
+    - Vague knowledge of smart homes;
+    - Media coverage;
+    - Injured friend;
+    - Need to try before judge;
+    - Not used to wear watch at home;
+    - Only one wired phone in the house;
++ **Medical conditions**
+    - Hard to recover;
+    - Bed rest;
+    - Visual impairment;
++ **Hazards**
+    - Tripping over stuff;
+    - Careful with carpets;
+    - Afraid to fall when alone;
+    - Harder to get help when alone;
++ **Technology related**
+    - Unmanageable number of cameras;
+    - Uncomfortable, too many cameras;
+    - "Feeling safer";
+    - Notify a family member;
+    - Non scary message;
+    - Great help for seniors;
+    - Dubious about data privacy.
+\newline
 
-*Uncomfortable*       Signals that the interviewee feels uncomfortable
-                      about the technology. This might be because of the
-                      way the technology operates or the way it is
-                      perceived.
-
-*Afraid/worried*      Signals that the technology perceives the technology
-                      as worrying (for different reasons). What we mean
-                      in this context is worries deriving from the use of
-                      the technology (in the practical sense to "make it
-                      work") and privacy concerns.
---------------------- ----------------------------------------------------------
-
-These codes are used to highlight portions of the interview with and agreed-upon
-concept label. These terms have been selected so to restrict the scope of the
-analysis of phrases and passages to the relevant topic. We recall that the aim
-of the interview is to discern personal feelings and perceived opinions of the
+These codes are used to highlight portions of the interview with a concept
+label. These terms have been selected so to restrict the scope of the analysis
+of phrases and passages to the relevant topic. We recall that the aim of the
+interview is to discern personal feelings and perceived opinions of the
 interviewee when comparing two different Smart Home solutions for fall
 detection: a wearable device and a video monitoring system.
 
