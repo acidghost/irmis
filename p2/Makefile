@@ -1,9 +1,15 @@
-FILES := p2.pdf
-EXTS := %.pdf
+pdf := p2.pdf
+incs := appendix.tex
+src := p2.pmd
 
-all: $(FILES)
+all: $(pdf)
 
-$(EXTS): %.pmd
-	@pandoc -S -s $< -o $@ --number-sections --template ../acm-sig-template.latex
+%.tex: %.pmd
+	@pandoc -S $< -o $@ -N
+
+$(pdf): $(src) $(incs)
+	@pandoc -S -s $(src) -o $(pdf) -N --template ../acm-sig-template.latex \
+		--filter pandoc-citeproc --include-after-body $(incs)
+
 clean:
-	@rm -rf $(FILES)
+	@rm -rf $(pdf) $(incs)

@@ -5,20 +5,58 @@ author:
   email: a.jemmett@student.vu.nl
   institute: Vrije Universiteit, Amsterdam
 date: \today
-keywords: Smart Homes, Elderly Healthcare, Technology Adoption
 documentclass: sig-alternate
+abstract: "TODO"
+keywords: Smart Homes, Elderly Healthcare, Technology Adoption
+categories:
+  - cat: H.1.3
+    nameone: Human computer interaction (HCI)
+    nametwo: Interaction devices
+  - cat: S.3.8.2
+    nameone: User characteristics
+    nametwo: Seniors
+bibliography: ../bibliography.bib
+csl: ../acm-sigchi-proceedings.csl
+tables: true
 ---
 
 # Introduction
 
-We here present the interview that we conducted in the context of the project
-assignment of the course Interdisciplinary Research Methodology for Information
-Sciences (IS). This interview aims at investigating the perceived sense of
-acceptance of a particular senior to Smart Home technologies.
+Studies show [@lutz2008coming; @countries2003world] that the worldwide life
+expectancy is expected to increase in the 21st century. This increase will lead
+to an estimated increase in population in the 65 and over age group of 24% to
+32%. At the same time the UN predicts a decline in the number of children and
+fertility; summing effects together results in the number of elderly people
+surpassing that of children and this will be more prominent in European
+countries. The health care system will thus face a lack of support from young
+individuals working in home and health care.
 
-The interviewee is the grandfather of the author, Lorenzo Di Nicola, age 92. He
-lives at his own home with his wife Armida. The interview was conducted in
-Italian.
+At the same time, new technologies like the Internet of Things (IoT), enable
+remote monitoring and sensing at a low cost of implementation and maintenance
+[@whitmore2015internet; @madakam2015internet; @da2014internet;
+@deshpande2016application]. The IoT emerges as a natural evolution of the World
+Wide Web (WWW) adjoint with the increasing miniaturization of computing devices.
+Wireless Sensor Networks (WSN), Near Field Communication (NFC) and RFID tags
+enable micro-controllers (small computing processors) to communicate to each
+other forming a network of data flows. A definition for IoT would necessarily
+comprehend the notion of an open network of intelligent objects that share
+information and are able to cooperate with each other and interact with the
+environment [@madakam2015internet].
+
+In the context of home care, technologies like the IoT can provide the health
+care system with new services to enhance the independence and reduce health
+problems of elderly and disabled people. In this document we are going to
+present and analyze an interview conducted to an Italian elderly citizen with
+the aim of investigating the perceived sense of acceptance of a particular
+senior to Smart Home technologies. The interviewee is the grandfather of the
+author, Lorenzo Di Nicola, age 92. He lives at his own home with his wife
+Armida.
+
+Section \ref{interview-structure} presents the interviewing process adopted and
+the interview structure (its questions). Section \ref{analysis} presents instead
+the analysis of the interview and is divided in Subsections presenting the
+coding protocol (in \ref{coding-protocol}) and the code analysis (in \ref{interview-analysis}).
+A brief conclusion is exposed in Section \ref{conclusion}.
 
 
 # Interview Structure
@@ -117,186 +155,19 @@ detection: a wearable device and a video monitoring system.
 
 
 ## Interview Analysis
-<!-- TODO -->
+
+**Q5:** *Cosa fai per prevenire che possa succedere a te?*
+
+
+Fra l'altro come sai                                          *Visual impairment*
+ho un problema alla vista (c.f.r. retinite pigmentosa) e
+questo complica le cose.
+
+
 
 
 # Conclusion
 <!-- TODO -->
 
 
-\appendix
-
-# Transcript
-
-Following is the full transcript of the interview, in its original language:
-Italian.
-
-\onecolumn
-
---------------------------------------------------------------------------------
-**Data**                                                      **Code**
-------------------------------------------------------------- ------------------
-**Q1:** *Hai mai sentito parlare di Smart Homes o domotica?*
-
-**A1:** Sì, ne ho sentito parlare. Ma non so molto...          *Vague knowledge
-\newline                                                        of smart homes*
-
-**Q2:** *Come ne sei venuto a conoscenza?*
-
-**A2:** Ne hanno parlato in televisione. Ho visto un           *Media coverage*
-programma di approfondimento in cui si discuteva delle case
-del futuro e come potranno essere.
-\newline
-
-**Q3:** *Conosci qualcuno che usa tecnologie di automazione o
-domotica, di questo tipo, nella sua abitazione?*
-
-**A3:** Putroppo no.
-\newline
-
-**Q4:** *Conosci qualcuno della tua età che ha avuto un
-incidente nella sua abitazione dovuto ad una caduta?*
-
-**A4:** Putroppo sì. Un mio amico qualche anno fa, cadde in   *Injured friend*
-casa sua e si ruppe un femore.
-
-Purtroppo come ben sai, alla                                  *Hard to recover*
-nostra età, una caduta ed, ancor di più, la rottura di un
-osso, può comportare conseguenze molto gravi perché il
-recupero è molto faticoso e lungo.
-
-E la degenza è deleteria alla nostra età.                     *Bed rest*
-\newline
-
-**Q5:** *Cosa fai per prevenire che possa succedere a te?*
-
-**A5:** Ci sono diverse cose che posso fare, a seconda
-della situazione e dove mi trovo.
-
-Fra l'altro come sai                                          *Visual impairment*
-ho un problema alla vista (c.f.r. retinite pigmentosa) e
-questo complica le cose.
-
-Ad esempio facilmente posso                                   *Tripping over stuff*
-non vedere un oggetto ed inciampare... Fortuna che non
-ci sono gradini in casa!
-
-In casa cerco di stare
-particolarmente attendo quando mi alzo o quando cammino       *Careful with carpets*
-nel corridoio, perché abbiamo tappeti ed ho timore di
-inciamparvi. Fino a qualche tempo fa andavo anche in giro
-da solo, ma adesso per via dei marciapiedi malmessi è troppo
-rischioso per me.
-\newline
-
-**Q6:** *Considera un dispositivo indossabile che può rilevare
-una caduta ed alertare qualcuno. Valuta questo dispositivo
-su una scala da 1 a 5 dove con 1 intendi "per nulla utile" e
-con 5 intendi "molto utile".*
-
-**A6:** Mi sembra davvero molto utile, quindi 5!
-\newline
-
-**Q7:** *Potresti argomentare la tua risposta?*
-
-**A7:** Beh credo che un dispositivo del genere possa essere
-molto utile sopratutto per le persone che vivono sole, ma non
-solo.
-
-Nel mio caso ad esempio, anche se vivo con Armida, lei        *Afraid to fall when alone*
-di tanto in tanto esce ed io rimango solo. In quei casi il    *Harder to get help when alone*
-timore di cadere si fa più concreto perché sarebbe più
-difficile chiedere aiuto in caso di necessità.
-\newline
-
-**Q8:** *Valuta questo dispositivo indossabile su una scala
-da 1 a 5 dove con 1 intendi "per nulla intrusivo" e con 5
-intendi "molto intrusivo".*
-
-**A8:** Non saprei dire con facilità senza poterlo provare,   *Need to try before judge*
-direi 3.
-\newline
-
-**Q9:** *Potresti argomentare la tua risposta?*
-
-**A9:** Non sono solito indossare l'orologio quando sono in   *Not used to wear watch at home*
-casa ed in più vedendo solo immagini non è facile per me
-dire quando sia comodo da indossare, anche se sembra un
-normale orologio.
-\newline
-
-**Q10:** Considera un dispositivo video che può rilevare
-una caduta ed alertare qualcuno. Valuta questo dispositivo
-su una scala da 1 a 5 dove con 1 intendi "per nulla utile" e
-con 5 intendi "molto utile".
-
-**A10:** Anche questo mi sembra molto utile.
-\newline
-
-**Q11:** *Potresti argomentare la tua risposta?*
-
-**A11:** Beh, svolge le stesse funzioni dell'altro
-dispositivo.
-
-Sono solo un po perplesso sul numero di                         *Unmanageable number of cameras*
-videocamere, che devono essere installate in tutte le stanze.
-\newline
-
-**Q12:** *Valuta questo dispositivo video su una scala
-da 1 a 5 dove con 1 intendi "per nulla intrusivo" e con 5
-intendi "molto intrusivo".*
-
-**A12:** Questo dispositivo mi sembra più intrusivo
-dell'altro. Credo che lo valuterei 4.
-\newline
-
-**Q13:** *Potresti argomentare la tua risposta?*
-
-**A13:** Avere una telecamera in ogni stanza che ti riprende    *Uncomfortable, too many cameras*
-costantemente non credo che mi farebbe sentire a mio agio.
-\newline
-
-**Q14:** *Considera la possibilità di entrambi i dispositivi
-di potrer alertare qualcuno nel caso in cui una caduta si
-verifichi. Valuta questa caratteristica su una scala da 1 a
-5 dove 1 significa "per nulla utile" e 5 significa
-"molto utile".*
-
-**A14:** Credo sia una caratteristica indispensabile di
-entrambi i dispositivi. Io la valuterei molto utile, 5.
-\newline
-
-**Q15:** *Perché pensi questo?*
-
-**A15:** Perché mi sentirei più sicuro se sapessi che, in      *"Feeling safer"*
-caso di caduta, qualcuno venga avvisato automaticamente.
-
-Fra l'altro se dovessi cadere potrei non avere il telefono     *Only one wired phone
-con me ed essere impossibilitato a raggiungerlo.                in the house*
-\newline
-
-**Q16:** *A chi vorresti che l'avviso sia inviato?*
-
-**A16:** Preferirei che l'avviso sia mandato ad un familiare.  *Notify a family member*
-Vorrei che l'avviso venga inviato a mio figlio Enzo. Lui è     *Non scary message*
-medico e saprebbe più prontamente cosa fare, mentre temo che
-mia figlia Valeria possa agitarsi.
-\newline
-
-**Q17:** *Hai qualcos'altro da aggiungere?*
-
-**A18:** Credo che queste tecnologie possano aiutare molto     *Great help for seniors*
-le persone anziane.
-
-Ho solo dei dubbi su cosa viene trasmesso                      *Dubious about data privacy*
-ed a chi per far funzionare questi apparecchi. Non vorrei
-assolutamente che, per esempio, le immagini delle videocamere
-vengano inviate a nessuno.
-\newline
-
-**Q19:** *In che colore preferiresti un dispositivo
-indossabile?*
-
-**A19:** Lo preferirei in un colore scuro, ma non è molto
-importante.
-------------------------------------------------------------- ------------------
+# References  {.unnumbered}
