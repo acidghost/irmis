@@ -1,5 +1,6 @@
 PDFs := sh1.pdf \
-	sh2.pdf
+	sh2.pdf \
+	sh3.pdf
 
 all: $(PDFs)
 
