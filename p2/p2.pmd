@@ -6,7 +6,14 @@ author:
   institute: Vrije Universiteit, Amsterdam
 date: \today
 documentclass: sig-alternate
-abstract: "TODO"
+abstract: "In this document we present and analyze an interview conducted with
+an Italian elderly citizen, in the context of Smart Home technologies for
+elderly care. The interview investigates customs, previous experiences and
+knowledge of the interviewee regarding Smart Home technologies, fall-related
+injuries and other things that might influence the interviewee's opinion on
+matters such as technology adoption and efficacy. We find that some devices
+might be perceived as intrusive by a senior user and try to delve deeper into
+the causes moving these judgments."
 keywords: Smart Homes, Elderly Healthcare, Technology Adoption
 categories:
   - cat: H.1.3
@@ -100,7 +107,9 @@ We then thanked the interviewee and declared the end of the interview. We want
 to highlight that before introducing the wearable device and the video
 monitoring device respectively, we made an introduction of the device to the
 interviewee, trying to use simple vocabulary and with the help of some pictures
-from the Internet.
+from the Internet. Moreover, the number of questions might seem small; we
+decided not to stress the interviewee with a bigger number of questions because
+of his age.
 
 
 # Analysis
@@ -159,7 +168,11 @@ detection: a wearable device and a video monitoring system.
 The interview provided the point of view of an elderly Italian citizen, living
 in his own house. It gives a contribution on the understanding of the authors on
 the subject of acceptance of smart home technologies, specifically
-fall-detection systems that use two different implementations.
+fall-detection systems that use two different implementations. We divide the
+analysis in two sections: the first one will analyze customs and previous
+experiences of the interviewee regarding topics related to Smart Homes; the
+second section will delve deeper into opinions and preferences of the
+interviewee with regards to the presented fall-detection technologies.
 
 
 ### Prior knowledge and experiences
@@ -180,7 +193,11 @@ In his house he, especially at night, is afraid of tripping over a carpet (in
 the hallway for example). To prevent this he makes sure to turn on the lights
 and, when he remembers, to bring a cellphone with him so to be able to call for
 help in case of need. He uses his cellphone because they don't have a cordless
-house phone.
+house phone. Moreover, Lorenzo, suffers from Retinitis Pigmentosa, a form of
+visual impairment that causes the person who is affected by it to see big black
+spots and to be practically blind at night. This condition obviously enhances
+the chance for him to trip over something, especially during the night, and
+ultimately get injured.
 
 
 ### Impressions on the technologies
@@ -195,23 +212,40 @@ or, even worse, losing consciousness.
 
 For what concerns the perceived sense of intrusiveness of the two technologies,
 the interviewee felt the video monitoring system to be the most intrusive. This
-has been justified with the fact that there are a number of cameras, places in
-every room, that give the feeling uncomfortable and observed constantly. By
-contrast, the wearable device was perceived as non intrusive; some doubts were
-expressed on the size and weight of the device (that wears like a watch on the
-writs of its user): the interviewee could not easily figure those out just by
-looking at a picture of the device.
+has been justified with the fact that there are a number of cameras, placed in
+every room, that, as he reported, might make him feel uncomfortable and observed
+constantly. By contrast, the wearable device was perceived as non intrusive;
+some doubts were expressed on the size and weight of the device (that wears like
+a watch on the writs of its user): the interviewee could not easily figure those
+out just by looking at a picture of the device. Moreover he is not used to wear
+a watch at home and this is something that might let him forget to wear the
+device.
 
 Regarding the alarm-sending feature of both devices, the interviewee recognized
 that to be their core feature and that he would like the alert to be sent to one
 of his family members. Specifically he would like it to be sent to his older
 son. First because he is a medical doctor too and because of this he would more
 promptly know what to do. Second he is afraid that the message might scare his
-younger daughter.
+younger daughter. The interviewee also stated that if his son would not have
+been a doctor, he probably would have want the alert to be sent to the
+emergencies or the closest hospital.
 
 
 # Conclusion
-<!-- TODO -->
+
+In this document we have presented and analyzed an interview conducted with an
+Italian elderly citizen, in the context of Smart Home technologies for elderly
+care. The interview investigated customs, previous experiences and knowledge of
+the interviewee regarding Smart Home technologies, fall-related injuries and
+other things that might influence the interviewee's opinion on matters such as
+technology adoption and efficacy. We propose a coding protocol (with a codes
+hierarchy) for the interview that enables for easy analysis of it. The actual
+interview analysis revealed personal opinions and preferences of the interviewee
+regarding two fall-detection devices: a wearable device and a video monitoring
+system. The interviewee showed some perplexity regarding the  video monitoring
+system because it is judged as intrusive, while the wearable device was judged
+more positively because it is similar to a simple watch, item which the
+interviewee is already used to wear.
 
 
 # References  {.unnumbered}
