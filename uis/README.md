@@ -6,9 +6,17 @@ generator
 ## Install, Build, Run
 
 ```bash
-tsd install
+typings install
 gulp
 ```
 
 The default task has a nodemon watching for changes.<br/>
 To just run server: `gulp serve`
+
+## Deploy to Heroku
+
+From the root directory:
+
+```bash
+git subtree push --prefix uis heroku master
+```
