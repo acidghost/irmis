@@ -2,7 +2,9 @@
 <html lang="en" ng-app="irmisUisApp">
 <head>
 	<meta charset="UTF-8">
-	<title>Hello Angular TypeScript!</title>
+	<title>IRMIS UIs / Group 07</title>
+
+  <base href="/">
 
 	<!-- bower:css -->
 	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
@@ -29,22 +31,43 @@
 </head>
 <body>
 
-<div class="container">
+  <div class="container">
 
-	<div class="starter-template">
-		<h1>irmis-uis has been scaffolded, yo!</h1>
-		<p class="lead">With layouts and styling by bootstrap</p>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" ui-sref="root.index">IRMIS UIs / Group 07</a>
+        </div>
 
-		<demo></demo>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="nav navbar-nav">
+            <li ui-sref-active="active"><a ui-sref="root.ui1">First UI</a></li>
+            <li ui-sref-active="active"><a href="#">Second UI</a></li>
+            <li ui-sref-active="active"><a href="#">Third UI</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
-	</div>
+    <div ui-view></div>
 
-</div>
+  </div>
 
 	<!-- bower:js -->
 	<script src="lib/jquery/dist/jquery.js"></script>
 	<script src="lib/bootstrap/dist/js/bootstrap.js"></script>
 	<script src="lib/angular/angular.js"></script>
+	<script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+	<script src="lib/angular-bootstrap/ui-bootstrap.js"></script>
 	<!-- endbower -->
 
 	<!-- inject:js -->

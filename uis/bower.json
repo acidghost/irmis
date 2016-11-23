@@ -2,9 +2,10 @@
   "name": "irmis-uis",
   "version": "0.0.0",
   "dependencies": {
-	
-	"bootstrap": "*",
-	"angular": "~1.4.8"
+    "bootstrap": "*",
+    "angular": "~1.4.8",
+    "angular-ui-router": "^0.3.2",
+    "angular-bootstrap": "^2.2.0"
   },
   "overrides": {
     "bootstrap": {
@@ -14,16 +15,27 @@
         "dist/js/bootstrap.js"
       ]
     },
-	"foundation": {
-	  "main": [
-		"css/foundation.css",
-		"js/foundation.js"
-	  ]
-	},
-	"font-awesome": {
-		"main": [
-		  "css/font-awesome.css"
-		]
-	}
+    "foundation": {
+      "main": [
+        "css/foundation.css",
+        "js/foundation.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css"
+      ]
+    },
+    "angular-bootstrap": {
+      "main": [
+        "ui-bootstrap-tpls.js",
+        "ui-bootstrap.js"
+      ]
+    },
+    "angular-ui-router": {
+      "main": [
+        "release/angular-ui-router.js"
+      ]
+    }
   }
 }
