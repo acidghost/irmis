@@ -88,6 +88,8 @@ gulp.task('inject', ['scripts', 'cssNano'], function(){
 
 });
 
+gulp.task('build', ['lint', 'scripts', 'sass', 'concatCss', 'cssNano', 'inject']);
+
 gulp.task('serve', ['scripts', 'cssNano', 'inject'], function(){
 
 	var options = {
