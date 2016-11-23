@@ -1,7 +1,7 @@
 {
   "name": "irmis",
   "scripts": {
-    "postdeploy": "gulp serve"
+    "postdeploy": "bower install && gulp serve"
   },
   "formation": {
     "web": {
