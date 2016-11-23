@@ -7,5 +7,10 @@
     "web": {
       "quantity": 1
     }
-  }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
 }
