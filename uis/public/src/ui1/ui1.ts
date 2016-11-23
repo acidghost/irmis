@@ -40,10 +40,10 @@ module UI1 {
   class UI1Ctrl {
     private static room_layer(): MenuItem[] {
       return [
-        new ToggableItem('Lights'),
-        new ToggableItem('Windows'),
-        new ToggableItem('Curtains'),
-        new ToggableItem('Doors')
+        new ToggableItem('uis.lights'),
+        new ToggableItem('uis.windows'),
+        new ToggableItem('uis.curtains'),
+        new ToggableItem('uis.doors')
       ];
     }
 
@@ -59,31 +59,31 @@ module UI1 {
         this.activations.push(null);
 
       this.ui_layers = [
-        new MenuItem('Rooms', [
-          new MenuItem('Bedroom', UI1Ctrl.room_layer()),
-          new MenuItem('Kitchen', UI1Ctrl.room_layer()),
-          new MenuItem('Living', UI1Ctrl.room_layer()),
-          new MenuItem('Bathroom', UI1Ctrl.room_layer())
+        new MenuItem('uis.rooms', [
+          new MenuItem('uis.bedroom', UI1Ctrl.room_layer()),
+          new MenuItem('uis.kitchen', UI1Ctrl.room_layer()),
+          new MenuItem('uis.living', UI1Ctrl.room_layer()),
+          new MenuItem('uis.bathroom', UI1Ctrl.room_layer())
         ]),
-        new MenuItem('Heating'),
-        new MenuItem('Energy'),
-        new MenuItem('Groceries', [
-          new MenuItem('Category1', [
-            new ToggableItem('Milk'),
-            new ToggableItem('Eggs')
+        new MenuItem('uis.heating'),
+        new MenuItem('uis.energy'),
+        new MenuItem('uis.groceries', [
+          new MenuItem('uis.category1', [
+            new ToggableItem('uis.milk'),
+            new ToggableItem('uis.eggs')
           ]),
-          new MenuItem('Category2', [
-            new ToggableItem('Vegetables'),
-            new ToggableItem('Chicken'),
-            new ToggableItem('Haring')
+          new MenuItem('uis.category2', [
+            new ToggableItem('uis.vegetables'),
+            new ToggableItem('uis.chicken'),
+            new ToggableItem('uis.haring')
           ]),
-          new ButtonItem('Submit', [], () => {
+          new ButtonItem('uis.submit', [], () => {
             $window.alert('Groceries submitted!');
           })
         ]),
-        new MenuItem('Services', [
-          new MenuItem('Emergencies'),
-          new MenuItem('Telephone')
+        new MenuItem('uis.services', [
+          new MenuItem('uis.emergencies'),
+          new MenuItem('uis.telephone')
         ])
       ];
     }

@@ -2,16 +2,16 @@
   <div class="col-xs-4">
     <ul class="nav nav-pills nav-stacked">
       <li ng-repeat="item in ui1.ui_layers" role="presentation" ng-class="{ active: item.active }">
-        <a ng-click="ui1.click_item(0, $index, item)">{{ item.text }}</a>
+        <a ng-click="ui1.click_item(0, $index, item)">{{ item.text | translate }}</a>
       </li>
     </ul>
   </div>
   <div class="col-xs-4">
     <ul class="nav nav-pills nav-stacked" ng-show="ui1.activations[0] !== null">
       <li ng-repeat="item in ui1.ui_layers[ui1.activations[0]].layers" role="presentation" ng-class="{ active: item.active }">
-        <a ng-if="item.type === 'MenuItem'" ng-click="ui1.click_item(1, $index, item)">{{ item.text }}</a>
+        <a ng-if="item.type === 'MenuItem'" ng-click="ui1.click_item(1, $index, item)">{{ item.text | translate }}</a>
         <a ng-if="item.type === 'ButtonItem'">
-          <button class="btn btn-success" ng-click="item.action()">{{ item.text }}</button>
+          <button class="btn btn-success" ng-click="item.action()">{{ item.text | translate }}</button>
         </a>
       </li>
     </ul>
@@ -21,12 +21,12 @@
       <li ng-repeat="item in ui1.ui_layers[ui1.activations[0]].layers[ui1.activations[1]].layers" role="presentation" ng-class="{ active: item.active }">
         <a ng-if="item.type === 'ToggableItem'" ng-click="item.toggle()">
           <span class="row">
-            <span class="col-xs-10">{{ item.text }}</span>
+            <span class="col-xs-10">{{ item.text | translate }}</span>
             <span class="col-xs-2" ng-class="{ toggleon: item.on_off, toggleoff: !item.on_off }">&nbsp;</span>
           </span>
         </a>
         <a ng-if="item.type === 'ButtonItem'">
-          <button class="btn btn-success" ng-click="item.action()">{{ item.text }}</button>
+          <button class="btn btn-success" ng-click="item.action()">{{ item.text | translate }}</button>
         </a>
       </li>
     </ul>

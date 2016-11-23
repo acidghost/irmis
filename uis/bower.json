@@ -5,7 +5,8 @@
     "bootstrap": "*",
     "angular": "~1.4.8",
     "angular-ui-router": "^0.3.2",
-    "angular-bootstrap": "^2.2.0"
+    "angular-bootstrap": "^2.2.0",
+    "angular-translate": "^2.13.0"
   },
   "overrides": {
     "bootstrap": {
@@ -35,6 +36,11 @@
     "angular-ui-router": {
       "main": [
         "release/angular-ui-router.js"
+      ]
+    },
+    "angular-translate": {
+      "main": [
+        "angular-translate.js"
       ]
     }
   }
