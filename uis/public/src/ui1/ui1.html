@@ -11,7 +11,7 @@
       <li ng-repeat="item in ui1.ui_layers[ui1.activations[0]].layers" role="presentation" ng-class="{ active: item.active }">
         <a ng-if="item.type === 'MenuItem'" ng-click="ui1.click_item(1, $index, item)">{{ item.text }}</a>
         <a ng-if="item.type === 'ButtonItem'">
-          <button class="btn btn-primary" ng-click="item.action()">{{ item.text }}</button>
+          <button class="btn btn-success" ng-click="item.action()">{{ item.text }}</button>
         </a>
       </li>
     </ul>
@@ -26,7 +26,7 @@
           </span>
         </a>
         <a ng-if="item.type === 'ButtonItem'">
-          <button class="btn btn-primary" ng-click="item.action()">{{ item.text }}</button>
+          <button class="btn btn-success" ng-click="item.action()">{{ item.text }}</button>
         </a>
       </li>
     </ul>

@@ -4,6 +4,8 @@ module UI1 {
 
   type ActionFn = () => void;
 
+  const $log = console;
+
   class MenuItem {
     public text: string;
     public layers: MenuItem[];
@@ -27,7 +29,7 @@ module UI1 {
       this.on_off = !this.on_off;
       if (this.action)
         this.action();
-      console.log(`${this.text} toggled`);
+      $log.info(`${this.text} toggled`);
     }
   }
 
@@ -45,43 +47,45 @@ module UI1 {
       ];
     }
 
-    public ui_layers: MenuItem[] = [
-      new MenuItem('Rooms', [
-        new MenuItem('Bedroom', UI1Ctrl.room_layer()),
-        new MenuItem('Kitchen', UI1Ctrl.room_layer()),
-        new MenuItem('Living', UI1Ctrl.room_layer()),
-        new MenuItem('Bathroom', UI1Ctrl.room_layer())
-      ]),
-      new MenuItem('Heating'),
-      new MenuItem('Energy'),
-      new MenuItem('Groceries', [
-        new MenuItem('Category1', [
-          new ToggableItem('Milk'),
-          new ToggableItem('Eggs')
-        ]),
-        new MenuItem('Category2', [
-          new ToggableItem('Vegetables'),
-          new ToggableItem('Chicken'),
-          new ToggableItem('Haring')
-        ]),
-        new ButtonItem('Submit', [], () => {
-          window.alert('Groceries submitted!');
-        })
-      ]),
-      new MenuItem('Services', [
-        new MenuItem('Emergencies'),
-        new MenuItem('Telephone')
-      ])
-    ];
+    public ui_layers: MenuItem[];
 
     public activations: number[];
     private static DEPTH = 3;
 
-    constructor(private $log: ng.ILogService) {
+    constructor(private $window: ng.IWindowService) {
       $log.info('UI1 started');
       this.activations = [];
       for (let i=0; i < UI1Ctrl.DEPTH - 1; i++)
         this.activations.push(null);
+
+      this.ui_layers = [
+        new MenuItem('Rooms', [
+          new MenuItem('Bedroom', UI1Ctrl.room_layer()),
+          new MenuItem('Kitchen', UI1Ctrl.room_layer()),
+          new MenuItem('Living', UI1Ctrl.room_layer()),
+          new MenuItem('Bathroom', UI1Ctrl.room_layer())
+        ]),
+        new MenuItem('Heating'),
+        new MenuItem('Energy'),
+        new MenuItem('Groceries', [
+          new MenuItem('Category1', [
+            new ToggableItem('Milk'),
+            new ToggableItem('Eggs')
+          ]),
+          new MenuItem('Category2', [
+            new ToggableItem('Vegetables'),
+            new ToggableItem('Chicken'),
+            new ToggableItem('Haring')
+          ]),
+          new ButtonItem('Submit', [], () => {
+            $window.alert('Groceries submitted!');
+          })
+        ]),
+        new MenuItem('Services', [
+          new MenuItem('Emergencies'),
+          new MenuItem('Telephone')
+        ])
+      ];
     }
 
     public click_item(depth: number, index: number, item: MenuItem) {
@@ -110,6 +114,6 @@ module UI1 {
   }
 
   let ui1 = angular.module('irmisUisApp.ui1', []);
-  ui1.controller('UI1Ctrl', ['$log', UI1Ctrl]);
+  ui1.controller('UI1Ctrl', ['$window', UI1Ctrl]);
 
 }
