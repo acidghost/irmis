@@ -9,19 +9,6 @@ let app = angular.module('irmisUisApp', [
 ]);
 
 
-
-class IndexCtrl {
-  private x: number;
-
-  constructor() {
-    this.x = 0xAA;
-  }
-}
-
-app.controller('IndexCtrl', [IndexCtrl]);
-
-
-
 function configIt($locationProvider: ng.ILocationProvider,
                   $stateProvider: angular.ui.IStateProvider,
                   $urlRouterProvider: angular.ui.IUrlRouterProvider) {
@@ -37,8 +24,6 @@ function configIt($locationProvider: ng.ILocationProvider,
     },
     'root.index': {
       url: '/',
-      controller: 'IndexCtrl',
-      controllerAs: 'index',
       templateUrl: 'app-templates/app/ui-index.html'
     },
     'root.ui1': {
