@@ -22,8 +22,11 @@ app.controller('IndexCtrl', [IndexCtrl]);
 
 
 
-function configIt($locationProvider, $stateProvider, $urlRouterProvider) {
-  $locationProvider.html5Mode(true);
+function configIt($locationProvider: ng.ILocationProvider,
+                  $stateProvider: angular.ui.IStateProvider,
+                  $urlRouterProvider: angular.ui.IUrlRouterProvider) {
+
+  $locationProvider.html5Mode(false);
 
   $urlRouterProvider.otherwise('/');
 
