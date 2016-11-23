@@ -1,8 +1,5 @@
 {
   "name": "irmis",
-  "scripts": {
-    "postdeploy": "bower install && gulp serve"
-  },
   "formation": {
     "web": {
       "quantity": 1
