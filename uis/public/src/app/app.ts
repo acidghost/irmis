@@ -54,7 +54,42 @@ function configIt($locationProvider: ng.ILocationProvider,
     }
   });
 
-  $translateProvider.translations('nl', {});
+  $translateProvider.translations('nl', {
+    'navbar': {
+      'brand': 'IRMIS UIs / Groep 07',
+      'ui1': 'Eerste UI',
+      'ui2': 'Tweede UI',
+      'ui3': 'Derde UI'
+    },
+    'welcome': 'Welkom',
+    'welcome-small': 'Groep 07 test omgeving',
+    'index': 'Kies bovenin de gebruikersomgeving die u wilt testen.',
+    'uis': {
+      'rooms': 'Kamers',
+      'heating': 'Verwarming',
+      'energy': 'Energie',
+      'groceries': 'Boodschappen',
+      'services': 'Diensten',
+      'bedroom': 'Slaapkamer',
+      'kitchen': 'Keuken',
+      'living': 'Woonkamer',
+      'bathroom': 'Badkamer',
+      'lights': 'Verlichting',
+      'windows': 'Ramen',
+      'curtains': 'Gordijnen',
+      'doors': 'Deuren',
+      'emergencies': 'Noodgevallen',
+      'telephone': 'Telefoon',
+      'category1': 'Categorie 1',
+      'category2': 'Categorie 2',
+      'milk': 'Melk',
+      'eggs': 'Eieren',
+      'vegetables': 'Groenten',
+      'chicken': 'Kip',
+      'haring': 'Haring',
+      'submit': 'Verstuur'
+    }
+  });
 
   $translateProvider.preferredLanguage(DEFAULT_LANG);
   $translateProvider.useSanitizeValueStrategy(null);
