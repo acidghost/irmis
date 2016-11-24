@@ -98,11 +98,15 @@ function configIt($locationProvider: ng.ILocationProvider,
 
   $urlRouterProvider.otherwise('/');
 
+  interface IRootCtrlScope extends angular.IRootScopeService {
+    lang: string;
+  }
+
   class RootCtrl {
-    constructor($rootScope: angular.IRootScopeService,
+    constructor($scope: IRootCtrlScope,
                 $translate: angular.translate.ITranslateService) {
-      $rootScope.lang = DEFAULT_LANG;
-      $rootScope.$watch('lang', (lang: string) => {
+      $scope.lang = DEFAULT_LANG;
+      $scope.$watch('lang', (lang: string) => {
         $translate.use(lang);
       });
     }
