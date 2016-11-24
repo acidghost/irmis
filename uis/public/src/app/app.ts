@@ -15,6 +15,8 @@ function configIt($locationProvider: ng.ILocationProvider,
                   $urlRouterProvider: angular.ui.IUrlRouterProvider,
                   $translateProvider: angular.translate.ITranslateProvider) {
 
+  const DEFAULT_LANG = 'en';
+
   $translateProvider.translations('en', {
     'navbar': {
       'brand': 'IRMIS UIs / Group 07',
@@ -54,16 +56,27 @@ function configIt($locationProvider: ng.ILocationProvider,
 
   $translateProvider.translations('nl', {});
 
-  $translateProvider.preferredLanguage('en');
+  $translateProvider.preferredLanguage(DEFAULT_LANG);
   $translateProvider.useSanitizeValueStrategy(null);
 
   $locationProvider.html5Mode(false);
 
   $urlRouterProvider.otherwise('/');
 
+  class RootCtrl {
+    constructor($rootScope: angular.IRootScopeService,
+                $translate: angular.translate.ITranslateService) {
+      $rootScope.lang = DEFAULT_LANG;
+      $rootScope.$watch('lang', (lang: string) => {
+        $translate.use(lang);
+      });
+    }
+  }
+
   const routes = {
     'root': {
       abstract: true,
+      controller: ['$rootScope', '$translate', RootCtrl],
       templateUrl: 'app-templates/app/root.html'
     },
     'root.index': {
