@@ -6,7 +6,8 @@ let app = angular.module('irmisUisApp', [
     'ui.bootstrap.tpls',
     'pascalprecht.translate',
     'app.templates',
-    'irmisUisApp.ui1'
+    'irmisUisApp.ui1',
+    'irmisUisApp.ui2'
 ]);
 
 
@@ -50,7 +51,10 @@ function configIt($locationProvider: ng.ILocationProvider,
       'vegetables': 'Vegetables',
       'chicken': 'Chicken',
       'haring': 'Haring',
-      'submit': 'Submit'
+      'submit': 'Submit',
+      'task1': 'Curtains',
+      'task2': 'Doors',
+      'task3': 'Groceries'
     }
   });
 
@@ -87,7 +91,10 @@ function configIt($locationProvider: ng.ILocationProvider,
       'vegetables': 'Groenten',
       'chicken': 'Kip',
       'haring': 'Haring',
-      'submit': 'Verstuur'
+      'submit': 'Verstuur',
+      'task1': 'Gordijnen',
+      'task2': 'Deuren',
+      'task3': 'Boodschappen'
     }
   });
 
@@ -127,6 +134,26 @@ function configIt($locationProvider: ng.ILocationProvider,
       controller: 'UI1Ctrl',
       controllerAs: 'ui1',
       templateUrl: 'app-templates/ui1/ui1.html'
+    },
+    'root.ui2': {
+      url: '/ui2',
+      templateUrl: 'app-templates/ui2/ui2.html'
+    },
+    'root.ui2.task1': {
+      url: '/task1',
+      controller: 'UI2T1Ctrl',
+      controllerAs: 'ui2',
+      templateUrl: 'app-templates/ui2/task.html'
+    },
+    'root.ui2.task2': {
+      url: '/task2',
+      controller: 'UI2T2Ctrl',
+      controllerAs: 'ui2',
+      templateUrl: 'app-templates/ui2/task.html'
+    },
+    'root.ui2.task3': {
+      url: '/task3',
+      templateUrl: 'app-templates/ui2/task.html'
     }
   };
 
