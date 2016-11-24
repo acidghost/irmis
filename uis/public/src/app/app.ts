@@ -11,12 +11,28 @@ let app = angular.module('irmisUisApp', [
 ]);
 
 
+const DEFAULT_LANG = 'en';
+
+
+interface IRootCtrlScope extends angular.IRootScopeService {
+  lang: string;
+}
+
+class RootCtrl {
+  constructor($scope: IRootCtrlScope,
+              $translate: angular.translate.ITranslateService) {
+    $scope.lang = DEFAULT_LANG;
+    $scope.$watch('lang', (lang: string) => {
+      $translate.use(lang);
+    });
+  }
+}
+
+
 function configIt($locationProvider: ng.ILocationProvider,
                   $stateProvider: angular.ui.IStateProvider,
                   $urlRouterProvider: angular.ui.IUrlRouterProvider,
                   $translateProvider: angular.translate.ITranslateProvider) {
-
-  const DEFAULT_LANG = 'en';
 
   $translateProvider.translations('en', {
     'navbar': {
@@ -104,20 +120,6 @@ function configIt($locationProvider: ng.ILocationProvider,
   $locationProvider.html5Mode(false);
 
   $urlRouterProvider.otherwise('/');
-
-  interface IRootCtrlScope extends angular.IRootScopeService {
-    lang: string;
-  }
-
-  class RootCtrl {
-    constructor($scope: IRootCtrlScope,
-                $translate: angular.translate.ITranslateService) {
-      $scope.lang = DEFAULT_LANG;
-      $scope.$watch('lang', (lang: string) => {
-        $translate.use(lang);
-      });
-    }
-  }
 
   const routes = {
     'root': {
