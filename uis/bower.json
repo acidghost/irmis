@@ -7,7 +7,8 @@
     "angular-ui-router": "^0.3.2",
     "angular-bootstrap": "^2.2.0",
     "angular-translate": "^2.13.0",
-    "annyang": "^2.6.0"
+    "annyang": "^2.6.0",
+    "font-awesome": "^4.7.0"
   },
   "overrides": {
     "bootstrap": {
