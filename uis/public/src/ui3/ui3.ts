@@ -13,6 +13,7 @@ module UI3 {
     setLanguage(lang: string): void;
     addCommands(commands: {}): void;
     removeCommands(commands: string|{}|string[]): void;
+    debug(onoff: boolean): void;
   }
 
 
@@ -80,16 +81,16 @@ module UI3 {
         };
 
         $rootScope.$watch('lang', (lang: string) => {
-          this.annyang.removeCommands(Object.keys(speeches[lang == 'en' ? 'en-US' : 'nl-NL']));
-
           let speechLang = `${lang}-${lang == 'en' ? 'US' : 'NL'}`;
+          this.annyang.removeCommands(Object.keys(speeches[speechLang]));
+
           $log.info(`Speech lang is ${speechLang}`);
           this.annyang.setLanguage(speechLang);
 
           this.annyang.addCommands(speeches[speechLang]);
         });
 
-        this.annyang.start();
+        this.annyang.debug(true);
       } else {
         $log.warn('annyang not available...');
       }
