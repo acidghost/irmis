@@ -62,10 +62,10 @@ module UI3 {
             'doe de lichten in de :space uit': (space: string) => {
               this.reply(`Lichten in de ${space} zijn uit`);
             },
-            'open :object in :space': (space: string, object: string) => {
+            'open :object in :space': (object: string, space: string) => {
               this.reply(`${object} in ${space} zijn geopend`);
             },
-            'sluit :object in :space': (space: string, object: string) => {
+            'sluit :object in :space': (object: string, space: string) => {
               this.reply(`${object} in ${space} zijn gesloten`);
             },
             'voeg :object toe aan winkelmand': (object: string) => {
@@ -77,11 +77,34 @@ module UI3 {
             'verstuur opdracht': () => {
               this.reply('De opdracht is verzonden');
             }
+          },
+          'it-IT': {
+            'accendi luci in :space': (space: string) => {
+              this.reply(`luci accese in ${space}`);
+            },
+            'spegni luci in :space': (space: string) => {
+              this.reply(`luci spente in ${space}`);
+            },
+            'apri :object in :space': (object: string, space: string) => {
+              this.reply(`${object} aperto in ${space}`);
+            },
+            'chiudi :object in :space': (object: string, space: string) => {
+              this.reply(`${object} chiuso in ${space}`);
+            },
+            'aggiungi :object al carrello': (object: string) => {
+              this.reply(`${object} aggiunto al carrello`);
+            },
+            'rimuovi :object dal carrello': (object: string) => {
+              this.reply(`${object} rimosso dal carrello`);
+            },
+            'invia ordine': () => {
+              this.reply('ordine inviato');
+            }
           }
         };
 
-        $rootScope.$watch('lang', (lang: string) => {
-          let speechLang = `${lang}-${lang == 'en' ? 'US' : 'NL'}`;
+        $rootScope.$watch('lang', (lang: AvailLang) => {
+          let speechLang = lang.getExtCode();
           this.annyang.removeCommands(Object.keys(speeches[speechLang]));
 
           $log.info(`Speech lang is ${speechLang}`);
@@ -99,7 +122,7 @@ module UI3 {
     reply(msg: string) {
       $log.info(msg);
       let utterance = new SpeechSynthesisUtterance(msg);
-      utterance.lang = this.$rootScope.lang;
+      utterance.lang = this.$rootScope.lang.code;
       this.speechSynth.speak(utterance);
     }
 

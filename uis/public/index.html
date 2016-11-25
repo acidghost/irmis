@@ -45,8 +45,10 @@
         <div class="nav navbar-nav navbar-right">
           <li style="margin-top: 14px">
             <div class="btn-group">
-              <label class="btn btn-default btn-xs" ng-model="lang" uib-btn-radio="'en'">EN</label>
-              <label class="btn btn-default btn-xs" ng-model="lang" uib-btn-radio="'nl'">NL</label>
+              <label ng-model="root.langCode" class="btn btn-default btn-xs"
+                     ng-repeat="alang in availLangs" uib-btn-radio="alang.code">
+                     {{ alang.text }}
+              </label>
             </div>
           </li>
         </div>

@@ -12,19 +12,53 @@ let app = angular.module('irmisUisApp', [
 ]);
 
 
-const DEFAULT_LANG = 'en';
+class AvailLang {
+  code: string;
+  text: string;
+  constructor(code: string, text: string) {
+    this.code = code;
+    this.text = text;
+  }
+  getExtCode(): string {
+    switch (this.code) {
+      case 'en':
+        return 'en-US';
+      case 'nl':
+        return 'nl-NL';
+      case 'it':
+        return 'it-IT';
+      default:
+        throw new Error(`${this.code} not supported!`);
+    }
+  }
+}
+
+const LANG_EN = new AvailLang('en', 'EN');
+const LANG_NL = new AvailLang('nl', 'NL');
+const LANG_IT = new AvailLang('it', 'IT');
+const LANG_DEFAULT = LANG_EN;
 
 
 interface IRootCtrlScope extends angular.IRootScopeService {
-  lang: string;
+  lang: AvailLang;
+  availLangs: AvailLang[];
+  root: { langCode: string };   // to make lang radio btn work...
 }
 
 class RootCtrl {
   constructor($scope: IRootCtrlScope,
               $translate: angular.translate.ITranslateService) {
-    $scope.lang = DEFAULT_LANG;
-    $scope.$watch('lang', (lang: string) => {
-      $translate.use(lang);
+    $scope.availLangs = [ LANG_EN, LANG_NL, LANG_IT ];
+    $scope.lang = LANG_DEFAULT;
+    $scope.root = { langCode: LANG_DEFAULT.code };
+    $scope.$watch('root.langCode', (langCode: string) => {
+      $translate.use(langCode);
+      for (let l of $scope.availLangs) {
+        if (l.code == langCode) {
+          $scope.lang = l;
+          break;
+        }
+      }
     });
   }
 }
@@ -115,7 +149,47 @@ function configIt($locationProvider: ng.ILocationProvider,
     }
   });
 
-  $translateProvider.preferredLanguage(DEFAULT_LANG);
+  $translateProvider.translations('it', {
+    'navbar': {
+      'brand': 'IRMIS UIs / Group 07',
+      'ui1': 'Prima UI',
+      'ui2': 'Seconda UI',
+      'ui3': 'Terza UI'
+    },
+    'welcome': 'Benvenuto',
+    'welcome-small': 'Group 07 testing framework',
+    'index': 'Scegli l\'interfaccia che vuoi testare dal menu qui in alto',
+    'uis': {
+      'rooms': 'Stanze',
+      'heating': 'Termostato',
+      'energy': 'Energia',
+      'groceries': 'Spesa',
+      'services': 'Servizi',
+      'bedroom': 'Camera da letto',
+      'kitchen': 'Cucina',
+      'living': 'Salone',
+      'bathroom': 'Bagno',
+      'lights': 'Luci',
+      'windows': 'Finestre',
+      'curtains': 'Tende',
+      'doors': 'Porte',
+      'emergencies': 'Emergenza',
+      'telephone': 'Telefono',
+      'category1': 'Categoria1',
+      'category2': 'Categoria2',
+      'milk': 'Latte',
+      'eggs': 'Uova',
+      'vegetables': 'Verdura',
+      'chicken': 'Pollo',
+      'haring': 'Aringhe',
+      'submit': 'Invia',
+      'task1': 'Tende',
+      'task2': 'Porte',
+      'task3': 'Spesa'
+    }
+  });
+
+  $translateProvider.preferredLanguage(LANG_DEFAULT.code);
   $translateProvider.useSanitizeValueStrategy(null);
 
   $locationProvider.html5Mode(false);
