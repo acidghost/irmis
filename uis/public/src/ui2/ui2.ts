@@ -61,9 +61,26 @@ module UI2 {
   }
 
 
+  class UI2T3Ctrl extends IUI2Ctrl {
+    constructor() {
+      super([
+        [
+          new ImageItem('uis.broccoli', 'img/broccoli.jpeg'),
+          new ImageItem('uis.carrots', 'img/carrots.jpeg'),
+          new ImageItem('uis.eggs', 'img/eggs.jpeg')
+        ], [
+          new ImageItem('uis.milk', 'img/milk.jpeg'),
+          new ImageItem('uis.tomatoes', 'img/tomatoes.jpeg')
+        ]
+      ]);
+    }
+  }
+
+
   angular
     .module('irmisUisApp.ui2', [])
     .controller('UI2T1Ctrl', [UI2T1Ctrl])
-    .controller('UI2T2Ctrl', [UI2T2Ctrl]);
+    .controller('UI2T2Ctrl', [UI2T2Ctrl])
+    .controller('UI2T3Ctrl', [UI2T3Ctrl]);
 
 }

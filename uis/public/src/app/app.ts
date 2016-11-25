@@ -156,6 +156,8 @@ function configIt($locationProvider: ng.ILocationProvider,
     },
     'root.ui2.task3': {
       url: '/task3',
+      controller: 'UI2T3Ctrl',
+      controllerAs: 'ui2',
       templateUrl: 'app-templates/ui2/task.html'
     },
     'root.ui3': {
