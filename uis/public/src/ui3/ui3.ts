@@ -7,6 +7,9 @@ module UI3 {
 
   interface IAnnyang {
     start(): void;
+    abort(): void;
+    pause(): void;
+    resume(): void;
     setLanguage(lang: string): void;
     addCommands(commands: {}): void;
     removeCommands(commands: string|{}|string[]): void;
@@ -21,6 +24,7 @@ module UI3 {
   class UI3Ctrl {
     private annyang: IAnnyang;
     private speechSynth: SpeechSynthesis;
+    public mic: boolean = false;
 
     constructor($window: IUI3Window, private $rootScope: IRootCtrlScope) {
       this.annyang = $window.annyang;
@@ -74,6 +78,16 @@ module UI3 {
       let utterance = new SpeechSynthesisUtterance(msg);
       utterance.lang = this.$rootScope.lang;
       this.speechSynth.speak(utterance);
+    }
+
+    clickMic(mic: boolean) {
+      if (mic) {
+        $log.info('Resuming...');
+        this.annyang.resume();
+      } else {
+        $log.info('Pausing...');
+        this.annyang.pause();
+      }
     }
   }
 
