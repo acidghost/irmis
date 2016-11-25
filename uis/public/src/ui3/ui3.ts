@@ -54,7 +54,29 @@ module UI3 {
               this.reply('Sending order');
             }
           },
-          'nl-NL': {}
+          'nl-NL': {
+            'doe de lichten in de :space aan': (space: string) => {
+              this.reply(`Lichten in de ${space} zijn aan`);
+            },
+            'doe de lichten in de :space uit': (space: string) => {
+              this.reply(`Lichten in de ${space} zijn uit`);
+            },
+            'open :object in :space': (space: string, object: string) => {
+              this.reply(`${object} in ${space} zijn geopend`);
+            },
+            'sluit :object in :space': (space: string, object: string) => {
+              this.reply(`${object} in ${space} zijn gesloten`);
+            },
+            'voeg :object toe aan winkelmand': (object: string) => {
+              this.reply(`${object} is aan de winkelmand toegevoed`);
+            },
+            'verwijder :object uit de winkelmand': (object: string) => {
+              this.reply(`${object} is uit de winkelmand verwijderd`);
+            },
+            'verstuur opdracht': () => {
+              this.reply('De opdracht is verzonden');
+            }
+          }
         };
 
         $rootScope.$watch('lang', (lang: string) => {
