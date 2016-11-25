@@ -5,24 +5,41 @@ module UI2 {
   const $log = console;
 
 
-  class ImageItem {
-    public on_off: boolean = false;
-    constructor(public title: string,
-                public img_url: string,
-                public clazz?: string) {}
+  abstract class Item {
+    type: string;
+    constructor(public text: string, public clazz?: string) {}
+    public click() {
+      $log.info(`${this.text} clicked`);
+    }
+  }
 
+
+  class ImageItem extends Item {
+    public type: string = 'ImageItem';
+    public on_off: boolean = false;
+    constructor(text: string, public img_url: string) {
+      super(text);
+    }
+  }
+
+
+  class BtnItem extends Item {
+    public type: string = 'BtnItem';
+    constructor(text: string, private action: () => void) {
+      super(text);
+    }
     click() {
-      $log.info(`${this.title} clicked`);
+      this.action();
     }
   }
 
 
   abstract class IUI2Ctrl {
-    public grid: ImageItem[][];
-    constructor(grid: ImageItem[][]) {
+    public grid: Item[][];
+    constructor(grid: Item[][]) {
       this.initGrid(grid);
     }
-    protected initGrid(grid: ImageItem[][]) {
+    protected initGrid(grid: Item[][]) {
       this.grid = grid;
       let nrow = this.grid[0].length;
       let clazz = `col-xs-${Math.floor(12 / nrow)}`
@@ -62,7 +79,7 @@ module UI2 {
 
 
   class UI2T3Ctrl extends IUI2Ctrl {
-    constructor() {
+    constructor($window: angular.IWindowService) {
       super([
         [
           new ImageItem('uis.broccoli', 'img/broccoli.jpeg'),
@@ -70,7 +87,10 @@ module UI2 {
           new ImageItem('uis.eggs', 'img/eggs.jpeg')
         ], [
           new ImageItem('uis.milk', 'img/milk.jpeg'),
-          new ImageItem('uis.tomatoes', 'img/tomatoes.jpeg')
+          new ImageItem('uis.tomatoes', 'img/tomatoes.jpeg'),
+          new BtnItem('uis.submit', () => {
+            $window.alert('Groceries submitted!');
+          })
         ]
       ]);
     }
@@ -81,6 +101,6 @@ module UI2 {
     .module('irmisUisApp.ui2', [])
     .controller('UI2T1Ctrl', [UI2T1Ctrl])
     .controller('UI2T2Ctrl', [UI2T2Ctrl])
-    .controller('UI2T3Ctrl', [UI2T3Ctrl]);
+    .controller('UI2T3Ctrl', ['$window', UI2T3Ctrl]);
 
 }

@@ -1,8 +1,11 @@
 <div class="row" ng-repeat="row in ui2.grid" style="margin-bottom: 20px;">
   <div class="{{ item.clazz }}" ng-repeat="item in row">
-    <button class="btn" ng-class="{ 'btn-success': item.on_off, 'btn-danger': !item.on_off }"
+    <button ng-if="item.type === 'ImageItem'" class="btn" ng-class="{ 'btn-success': item.on_off, 'btn-danger': !item.on_off }"
             ng-click="item.click()" ng-model="item.on_off" uib-btn-checkbox>
-      <img ng-src="{{ item.img_url }}" title="{{ item.title | translate }}" class="img-responsive" style="max-height: 300px;" />
+      <img ng-src="{{ item.img_url }}" title="{{ item.text | translate }}" class="img-responsive" style="max-height: 300px;" />
+    </button>
+    <button ng-if="item.type === 'BtnItem'" class="btn btn-primary" ng-click="item.click()">
+      {{ item.text | translate }}
     </button>
   </div>
 </div>
