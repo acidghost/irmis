@@ -7,7 +7,8 @@ let app = angular.module('irmisUisApp', [
     'pascalprecht.translate',
     'app.templates',
     'irmisUisApp.ui1',
-    'irmisUisApp.ui2'
+    'irmisUisApp.ui2',
+    'irmisUisApp.ui3'
 ]);
 
 
@@ -156,6 +157,12 @@ function configIt($locationProvider: ng.ILocationProvider,
     'root.ui2.task3': {
       url: '/task3',
       templateUrl: 'app-templates/ui2/task.html'
+    },
+    'root.ui3': {
+      url: '/ui3',
+      controller: 'UI3Ctrl',
+      controllerAs: 'ui3',
+      templateUrl: 'app-templates/ui3/ui3.html'
     }
   };
 
