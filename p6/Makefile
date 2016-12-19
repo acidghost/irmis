@@ -3,7 +3,8 @@ PDFs := sh1.pdf \
 	sh3.pdf \
 	sh4.pdf \
 	sh5.pdf \
-	sh6.pdf
+	sh6.pdf \
+	sh7.pdf
 
 all: $(PDFs)
 
